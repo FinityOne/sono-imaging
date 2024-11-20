@@ -43,7 +43,7 @@ export default function RootLayout({
         {/* Navbar (Client-Side) */}
         <Navbar />
         <main className="mt-[80px]">{children}</main>
-        <footer className="bg-white text-black py-8 mt-6">
+        <footer className="bg-white text-black py-8 mt-5">
           <div className="container mx-auto flex flex-col md:flex-row justify-between items-start">
             {/* Left Section - Logo and Description */}
             <div className="flex flex-col items-start mb-6 md:mb-0 md:w-1/3">
