@@ -43,10 +43,10 @@ export default function RootLayout({
         {/* Navbar (Client-Side) */}
         <Navbar />
         <main className="mt-[80px]">{children}</main>
-        <footer className="bg-white text-black py-8 mt-5">
-          <div className="container mx-auto flex flex-col md:flex-row justify-between items-start">
+        <footer className="bg-white text-black py-8 mt-5 px-5 border-t-4 border-blue-900">
+          <div className="container mx-auto flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0 md:space-x-8">
             {/* Left Section - Logo and Description */}
-            <div className="flex flex-col items-start mb-6 md:mb-0 md:w-1/3">
+            <div className="flex flex-col items-start md:w-1/3">
               <Image
                 src="/logo/sono-logo-large.png" // Replace with your actual logo path
                 alt="Sono Staffing Logo"
@@ -54,7 +54,7 @@ export default function RootLayout({
                 height={50}
                 className="mb-4"
               />
-              <p className="text-sm text-gray-600">
+              <p className="text-xs md:text-sm text-gray-600">
                 Dedicated to providing exceptional ultrasound services and
                 staffing solutions nationwide. We strive for excellence in
                 connecting healthcare providers with top-tier professionals.
@@ -66,36 +66,38 @@ export default function RootLayout({
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fab fa-facebook text-xl text-gray-800 hover:text-blue-600"></i>
+                  <i className="fab fa-facebook text-md md:text-xl text-gray-800 hover:text-blue-600"></i>
                 </a>
                 <a
                   href="https://twitter.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fab fa-twitter text-xl text-gray-800 hover:text-blue-400"></i>
+                  <i className="fab fa-twitter text-md md:text-xl text-gray-800 hover:text-blue-400"></i>
                 </a>
                 <a
                   href="https://linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fab fa-linkedin text-xl text-gray-800 hover:text-blue-500"></i>
+                  <i className="fab fa-linkedin text-md md:text-xl text-gray-800 hover:text-blue-500"></i>
                 </a>
                 <a
                   href="https://instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fab fa-instagram text-xl text-gray-800 hover:text-pink-500"></i>
+                  <i className="fab fa-instagram text-md md:text-xl text-gray-800 hover:text-pink-500"></i>
                 </a>
               </div>
             </div>
 
             {/* Right Section - Quick Links */}
             <div className="flex flex-col md:w-1/3">
-              <h5 className="font-semibold text-lg mb-4">Quick Links</h5>
-              <div className="flex flex-col space-y-2">
+              <h5 className="font-semibold text-md md:text-lg mb-2">
+                Quick Links
+              </h5>
+              <div className="flex flex-col space-y-2 text-sm">
                 <Link
                   href="/about"
                   className="text-gray-800 hover:text-blue-600"
@@ -125,7 +127,7 @@ export default function RootLayout({
           </div>
 
           {/* Footer Bottom */}
-          <div className="mt-8 text-center text-sm text-gray-500">
+          <div className="mt-4 text-center text-xs md:text-sm text-gray-500">
             &copy; {new Date().getFullYear()} Sono Staffing Solutions. All
             rights reserved.
           </div>
